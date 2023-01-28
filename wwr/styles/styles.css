@@ -1,0 +1,53 @@
+body {
+    background-color: #fcfbfb;
+    }
+
+header a {
+    height: 80px;
+    margin: 0 auto;}
+
+header {background-color: rgba(20,30,13, .7)}
+    
+.textCenter, main {
+    text-align: center;}
+
+
+
+.msg {
+    background-color: rgba(20,30,13, .7);
+    font-size: 15px;
+    color: white;
+}
+.logo {
+    width: 80px;
+}
+
+
+footer,a{
+    color: goldenrod;
+}
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3;}    
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;}  
+
+
+#background {
+    width: 2000px;
+    height: 500px;
+    background-color: #d9c2a3;
+}
+
+
+
+footer p {
+    font-size: 1.2em;
+    } 
+footer p a:hover{
+    text-decoration: underline;}
+footer {
+    background-color: rgba(20,30,13, .7)}
+
