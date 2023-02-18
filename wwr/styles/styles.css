@@ -158,10 +158,10 @@ footer .social img {
     width: 60px;
 }
 .card-img {
-    border: 10px solid#02364f;
+    border: 10px solid#DAA520;
     width: 550px;
     transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px ;
 }
 .card-img:hover {
     opacity: .6;
