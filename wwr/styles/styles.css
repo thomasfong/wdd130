@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Labrada:wght@100&family=Lilita+One&family=Rock+Salt&family=Shantell+Sans:wght@500&display=swap');
 h1, h4 {
-    font-family: 'trade Winds', Arial, sans-serif;
+    font-family: 'Shantell Sans', Arial, sans-serif;
 }
 h2 {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: Lilita One, Helvetica, sans-serif;
 }
 p, .book, .join {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: Lilita One, Helvetica, sans-serif;
 }
 #content {
     margin: 0 auto;
@@ -109,16 +110,16 @@ nav a:hover {
     margin: 200px 0;
 }
 #background {
-    background-color: #23aed0;
+    background-color: #219ebc;
     color: black;
 }
 .msg {
-    background-color: #02364f;
+    background-color: #fb8500;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px #FFAFCC;
 }
 .msg h2 {
     color: white;
@@ -128,7 +129,7 @@ nav a:hover {
     padding-bottom: 15px;
 }
 footer {
-    background-color: #23aed0;
+    background-color: #219ebc;
     color: white;
     padding: 25px 50px;
     margin-top: 200px;
@@ -144,7 +145,7 @@ footer p {
     font-size: 1.2em;
 }
 footer a:hover {
-    color: #d9c2a3;
+    color: #FFAFCC;
 }
 .icon, .logo {
     width: 80px;
@@ -194,7 +195,7 @@ footer .social img {
     grid-column: 2/7;
     grid-row: 5/8;
     width: 100%;
-    box-shadow: 5px 5px 10px #6f7364;
+    box-shadow: 5px 5px 10px #DAA520;
 }
 
 
@@ -222,7 +223,7 @@ footer .social img {
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
+        color: #FFAFCC;
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
