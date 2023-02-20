@@ -17,7 +17,7 @@ nav a {
     color: #fcfbfb;
     text-decoration: none;
     padding: 35px;
-    font-family: montserrat, Arial, sans-serif;
+    font-family: Lilita One, Helvetica, sans-serif;
 }
 h1 {
     text-align: center;
@@ -57,7 +57,7 @@ h4 {
     margin-top: 5px;
 }
 header {
-    background-color: rgba(20,30,13, .7);
+    background-color: #219ebc;
     display: grid;
     grid-template-columns: 150px auto;
 }
