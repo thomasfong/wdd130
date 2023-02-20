@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Labrada:wght@100&family=Lilita+One&family=Rock+Salt&family=Shantell+Sans:wght@500&display=swap');
+
 h1, h4 {
     font-family: 'Shantell Sans', Arial, sans-serif;
 }
@@ -93,8 +94,8 @@ nav a:hover {
     color: #1fff93;
 }
 .book, .join {
-    background-color: #d9c2a3;
-    color: black;
+    background-color: #219ebc;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
@@ -114,12 +115,12 @@ nav a:hover {
     color: black;
 }
 .msg {
-    background-color: #fb8500;
+    background-color: #ff931f;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
-    box-shadow: 5px 5px 10px #FFAFCC;
+    box-shadow: 5px 5px 10px black;
 }
 .msg h2 {
     color: white;
@@ -138,7 +139,7 @@ footer {
     align-items: center;
 }
 footer a {
-    color: goldenrod;
+    color: white;
     text-decoration: none;
 }
 footer p {
@@ -223,7 +224,7 @@ footer .social img {
     }
     .home-title {
         font-size: 25px;
-        color: #FFAFCC;
+        color: white;
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
