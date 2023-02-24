@@ -2,29 +2,29 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Labrada:wght@100&family=Lilita+One&family=Rock+Salt&family=Shantell+Sans:wght@500&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #7fc8f8  ;
-  --secondary-color: #5effbf;
-  --accent1-color: #ff6392;
-  --accent2-color: #5aa9e6;
+  --primary-color: #8ecae6   ;
+  --secondary-color: #219ebc ;
+  --accent1-color: #ffb703;
+  --accent2-color: #fb8500;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Rock Salt";
-  --paragraph-font: Acme, Helvetica, sans-serif;
+  --heading-font: "Shantell Sans";
+  --paragraph-font: Lilita One, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #5effbf (0, 0, 0);  /* headlines on a white background */ 
-  --headline-color-on-color: #ffe45e(255, 255, 255); /* headlines on a colored background */ 
-  --paragraph-color-on-white: #ff6392; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #5effbf(255, 255, 255); /* paragraph text on a colored background */ 
-  --paragraph-background-color: #7fc8f8  ;
-  --nav-link-color: #ff6392;
-  --nav-background-color: #5effbf;
-  --nav-hover-link-color: #ffa478;
-  --nav-hover-background-color: #396E94;
+  --headline-color-on-white: #ffb703;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #8ecae6; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #219ebc  ;
+  --nav-link-color: #219ebc;
+  --nav-background-color: #fb8500;
+  --nav-hover-link-color: #8ecae6;
+  --nav-hover-background-color: #ffb703;
 }
 
 
@@ -82,16 +82,16 @@ p {
   height: 3em;
 }
 .primary {
-  background-color: var(--primary );
+  background-color: var(--primary-color);
 }
 .secondary {
-  background-color: var(--secondary);
+  background-color: var(--secondary-color);
 }
 .accent1 {
-  background-color: var(--accent1);
+  background-color: var(--accent1-color);
 }
 .accent2{
-  background-color: var(--accent2);
+  background-color: var(--accent2-color);
 }
 p.colored {
   background-color: var(--paragraph-background-color);
