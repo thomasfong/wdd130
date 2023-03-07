@@ -215,31 +215,53 @@ footer .social img {
 .idaho-card {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-left: 50;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 100px;
     box-shadow: 5px 5px 10px black;
+    border: 10px solid#DAA520;
+    height: 100px
+    
 }
 
 .utah-card {
     grid-column: 1/2;
     grid-row: 2/3;
     margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 200px;
     box-shadow: 5px 5px 10px black;
-   
+    border: 10px solid#DAA520;
+    height: 100px
+
 }
 
 .arizona-card {
     grid-column: 1/2;
     grid-row: 3/4;
     margin-left: 50px;
+    margin-right: 30px;
+    margin-top: 200px;
     box-shadow: 5px 5px 10px black;
+    border: 10px solid#DAA520;
+    height: 100px
    
 }
+
+.river-img, .river-img2, .river-img3 {
+    margin-top: 100px;
+    width: 800;
+    border: 10px solid#DAA520;
+    box-shadow: 5px 5px 10px black;
+    
+}
+
 #text1 {
     grid-column: 2/4;
     grid-row: 1/2;
-    margin-left: 50px;
+    margin-left: 100px; 
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 250px;
     background-color: #219ebc;
     border-radius: 5px;
     border-style: double;
@@ -250,9 +272,9 @@ footer .social img {
 #text2 {
     grid-column: 2/4;
     grid-row: 2/3;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 250px;
     background-color: #219ebc;
     border-radius: 5px;
     border-style: double;
@@ -263,9 +285,9 @@ footer .social img {
 #text3 {
     grid-column: 2/4;
     grid-row: 3/4;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
-    margin-top: 50px;
+    margin-top: 250px;
     background-color: #219ebc;
     border-radius: 5px;
     border-style: double;
