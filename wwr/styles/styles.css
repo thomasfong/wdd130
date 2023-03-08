@@ -201,6 +201,11 @@ footer .social img {
 
 /*------------------Home Page css end here then River Page css start from below--------------------*/
 
+#content1 {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
 #tiile {
     text-align: center;
     
@@ -221,6 +226,7 @@ footer .social img {
     box-shadow: 5px 5px 10px black;
     border: 10px solid#DAA520;
     height: 100px
+
     
 }
 
@@ -242,6 +248,7 @@ footer .social img {
     margin-left: 50px;
     margin-right: 30px;
     margin-top: 200px;
+    background-color: #219ebc;
     box-shadow: 5px 5px 10px black;
     border: 10px solid#DAA520;
     height: 100px
