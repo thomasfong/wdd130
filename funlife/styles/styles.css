@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Labrada:wght@100&family=Lilita+One&family=Rock+Salt&family=Shantell+Sans:wght@500&display=swap');
+
+header{
+    background-color: #4682B4;
+    color: black;
+    display: grid;
+    padding: 28px 28px;
+    margin-top: auto;
+    height: 100px;
+    display: flex;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family:'Courier New', Courier, monospace;
+    justify-content:left;
+    align-items:center;
+}
+header a{
+    padding-right: 100px;
+}
+.logo{
+    width: 130px;
+    border: #FFA500 solid 5px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+nav a{
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    padding: 35px;
+    font-family: Lilita One, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-size: 20px;
+    font-weight:normal;
+}
+
+.home-title{
+    background-color: #23aed0;
+    color: white;
+    border: #FFA500 solid 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800px;
+    font-style: italic;
+    border-radius: 15px;
+    margin: 90px 550px 20px 550px;
+}
+.first{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    height:700px;
+}
+h2{
+    grid-column: 4/4;
+    grid-row: 3/4;
+    color: black;
+}
+.Home-img2{
+    grid-column: 1;
+    grid-row: 3/4;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+    width: 700px;
+}
+.Home-img3{
+    grid-column: 3;
+    grid-row: 3/4;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 100px;
+    width: 700px;
+}
+
+footer{
+    background-color: #4682B4;
+    color: black;
+    display: grid;
+    padding: 28px 28px;
+    margin-top: 2000px;
+    height: 100px;
+    display: flex;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family:'Courier New', Courier, monospace;
+    justify-content:left;
+    align-items:center;
+}
+.social{
+    align-items:right;
+    margin-left: 300px;
+
+}
+
