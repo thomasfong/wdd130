@@ -6,10 +6,10 @@ Fonts are separated by a | */
 :root {
   /* change the values below to your colors from your palette */
 
-  --primary-color: #8ecae6   ;
-  --secondary-color: #219ebc ;
+  --primary-color: #219ebc ;
+  --secondary-color: #fb8500 ;
   --accent1-color: #ffb703;
-  --accent2-color: #fb8500;
+  --accent2-color: #4682B4;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Shantell Sans";
@@ -227,3 +227,5 @@ h5 {
   text-indent: 15px;
 
 }
+
+
