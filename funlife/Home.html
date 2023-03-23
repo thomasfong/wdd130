@@ -1,64 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funlife</title><link rel = icon href = 'funlife.jpg.JPG'>
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
-
 <body>
-    <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/funlife.jpg.JPG" alt="funlife Logo">
-        </a>
-        <nav>
-            <a href="Home.html">Home</a>
-            <a href="Hiking.html">Hiking</a>
-            <a href="Martial Arts.html">Martial Arts</a>
-        </nav>
-    </header>
+    
+<div id="Home" class="tabcontent">
+    <a id="logo_link" href="index.html">
+        <img class="logo" src="images/funlife.jpg.JPG" alt="funlife Logo">
+  <h1>Funlife</h1>
+  <p>Welcome to My Web page.</p>
+</div>
 
-    <main>
-    <div class="home-title">
-        <h1>Welcome to FunLife home page</h1>
-    </div>
-        <section class="first">
-            <img class="Home-img1" src="images/Home.jpg" alt=" Home page photo">
-            <h2> About Me </h2>
-       
+<div id="Hobbies" class="tabcontent">
+  <h1>Hobbies</h1>
+  <p>Get to know more about my Hobbies.</p> 
+</div>
 
-            <section class="first">
-            <img class="Home-img2" src="images/Hiking1.jpg" alt="first page photo">
-            <h3> Hiking </h3>
-        
+<div id="Contact" class="tabcontent">
+  <h1>Contact me</h1>
+  <p>If you want to be my friend, please contact me.</p>
+</div>
 
-        <section class="first">
-            <img class="Home-img3" src="images/Martial Arts2.jpg" alt="second page photo">
-            <h4> Martial Arts </h4>      
-        </section>
+<div id="plan" class="tabcontent">
+  <h1>Site-plan</h1>
+  <p>Learn about my site-plan.</p>
+</div>
 
-    </main>
+<button class="tablink" onclick="openCity('Home', this, '#219ebc')" id="defaultOpen"><a href="Home.html">Home</a></button>
+<button class="tablink" onclick="openCity('Hobbies', this, '#fb8500')"><a href="Hobbies.html">Hobbies</a></button>
+<button class="tablink" onclick="openCity('Contact', this, '#ffb703')"><a href="Contact.html">Contact</a></button>
+<button class="tablink" onclick="openCity('plan', this, '#4682B4')"><a href="site-plan.html">site-plan</a></button>
 
-    <footer>
-        <p>Dry Oar &copy; 2023 - Thomas,king leong Fong </p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="contactme.html">Contact Us</a></p>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
-            </a>
+<script>
+    function openCity(cityName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(cityName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">This is my home city</h1>
+          <p>Hong Kong</p>
+          <button>Check</button>
         </div>
-    </footer>
+      </div>
+      <h2>About Me</h2>
+      <p></p>
+      <br>
+      <div class="column">
+        <div class="card">
+          <img src="images/Martial Arts2.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>About Me</h2>
+            <p class="title" href="aboutme.html">關於我</p>
+            <p>If you want to know more about me, you can enter here.</p>
+            <p></p>
+            <p><button class="button">click here</button></p>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="column">
+        <div class="card">
+          <img src="images/Hiking2.jpg" alt="John" style="width:100%">
+          <div class="container">
+            <h2>Horries</h2>
+            <p class="title">興趣</p>
+            <p>To learn more about my interests, you can enter here.</p>
+            <p></p>
+            <p><button class="button" href="Horries.html">click here</button></p>
+          </div>
+        </div>
+      </div>
     </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="images/contact.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Contact</h2>
+              <p class="title" >聯絡我</p>
+              <p>If you want to be my friend, you can contact me directly.</p>
+              <p></p>
+              <p><button class="button" href="contact.html">click herehr<</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<footer>
+     
+    <div class="social">
+
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="fb icon">
+        </a>
+
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+
+        <a href="https://whatsapp.com" target="_blank">
+            <img src="images/whatsapp icon.png" alt="whatsapp icon">
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+
+        <a href="https://wechat.com" target="_blank">
+            <img src="images/wechat.png" alt="wechat icon">
+
+        <a href="https://workspace.google.com/" target="_blank">
+            <img src="images/gmail.png" alt="gmail icon">
+        </a>
+
+        <a href="https://youtube.com" target="_blank">
+          <img src="images/youtube.png" alt="youtube icon">
+        </a>
+
+        <p class="word">Thomas Fong Contact list @ 2023</p>
+    </div>
+</footer>
 </body>
-</html>
-          
+</html> 
