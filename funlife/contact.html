@@ -1,57 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <link rel="stylesheet" href="styles/styles1.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Title</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
-  <body>
-    <header>
+<body>
     
-      <div id="London" class="tabcontent">
-        <h1>London</h1>
-        <p>London is the capital city of England.</p>
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        <h1>Paris</h1>
-        <p>Paris is the capital of France.</p>
-      </div>
-      
-      <div id="Tokyo" class="tabcontent">
-        <h1>Tokyo</h1>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-      
-      <div id="Oslo" class="tabcontent">
-        <h1>Oslo</h1>
-        <p>Oslo is the capital of Norway.</p>
-      </div>
-      
-      <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
-      <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
-      <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
-      <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
-      
-      
-    </div>
-    </header>>
-    <section id="intro">
-      <div class="jumbotron">
-        <div class="cotainer">
-        
-          <div class="col-md-12">
-          <h1>耶穌基督後期聖徒教會</h1>
-          <p class="lead">地面上唯一真實教會</p>
-          <a class = "btn"href="#">洗禮</a>
-        </div>
-        </div>
-      </div>  
-    </section>
+<div id="Home" class="tabcontent">
+    <a id="logo_link" href="index.html">
+        <img class="logo" src="images/funlife.jpg.JPG" alt="funlife Logo">
+  <h1>Funlife</h1>
+  <p>Welcome to My Web page.</p>
+</div>
 
-  </body>
-</html>
+<div id="About" class="tabcontent">
+  <h1>About Me</h1>
+  <p>Learn more about me.</p>
+</div>
+
+<div id="Hobbies" class="tabcontent">
+  <h1>Hobbies</h1>
+  <p>Get to know more about my Hobbies.</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h1>Contact me</h1>
+  <p>If you want to be my friend, please contact me.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Home', this, '#219ebc')" id="defaultOpen"><a href="Home.html">Home</a></button>
+<button class="tablink" onclick="openCity('About', this, '#4682B4')"><a href="about me.html">About me</a></button>
+<button class="tablink" onclick="openCity('Hobbies', this, '#fb8500')"><a href="horries.html">Hobbies</a></button>
+<button class="tablink" onclick="openCity('Contact', this, '#ffb703')"><a href="contact.html">Contact</a></button>
+
+<script>
+    function openCity(cityName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(cityName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+<footer>
+     
+    <div class="social">
+
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="fb icon">
+        </a>
+
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+
+        <a href="https://whatsapp.com" target="_blank">
+            <img src="images/whatsapp icon.png" alt="whatsapp icon">
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+
+        <a href="https://wechat.com" target="_blank">
+            <img src="images/wechat.png" alt="wechat icon">
+
+        <a href="https://workspace.google.com/" target="_blank">
+            <img src="images/gmail.png" alt="gmail icon">
+        </a>
+
+        <a href="https://youtube.com" target="_blank">
+          <img src="images/youtube.png" alt="youtube icon">
+        </a>
+
+        <p class="word">Thomas Fong Contact list @ 2023</p>
+    </div>
+</footer>
+</body>
+</html> 

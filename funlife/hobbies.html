@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    
+<div id="Home" class="tabcontent">
+    <a id="logo_link" href="index.html">
+        <img class="logo" src="images/funlife.jpg.JPG" alt="funlife Logo">
+  <h1>Funlife</h1>
+  <p>Welcome to My Web page.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h1>About Me</h1>
+  <p>Learn more about me.</p>
+</div>
+
+<div id="Hobbies" class="tabcontent">
+  <h1>Hobbies</h1>
+  <p>Get to know more about my Hobbies.</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h1>Contact me</h1>
+  <p>If you want to be my friend, please contact me.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Home', this, '#219ebc')" id="defaultOpen"><a href="Home.html">Home</a></button>
+<button class="tablink" onclick="openCity('About', this, '#4682B4')"><a href="about me.html">About me</a></button>
+<button class="tablink" onclick="openCity('Hobbies', this, '#fb8500')"><a href="horries.html">Hobbies</a></button>
+<button class="tablink" onclick="openCity('Contact', this, '#ffb703')"><a href="contact.html">Contact</a></button>
+
+<script>
+    function openCity(cityName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(cityName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+
+
+        </head>
+        <body>
+          
+          <h2 class="Headline"style="text-align:center">My Hobby - Hiking</h2> 
+
+          <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="images/Hiking1.jpg" style="width:900px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="images/3.jpg" style="width:900px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="images/2.jpg" style="width:900px">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="images/8.jpg" style="width:900px">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="images/9.jpg" style="width:900px">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="images/12.jpg" style="width:900px">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row1">
+              <div class="column1">
+                <img class="demo cursor" src="images/Hiking1.jpg" style="width:100%" onclick="currentSlide(1)" alt="We are ready to go">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/3.jpg" style="width:100%" onclick="currentSlide(2)" alt="We are ''0331'' team">
+              </div> 
+              <div class="column1">
+                <img class="demo cursor" src="images/2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Take a group photo before departure">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/8.jpg" style="width:100%" onclick="currentSlide(4)" alt="There is still a long way to go">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/9.jpg" style="width:100%" onclick="currentSlide(5)" alt="We have completed 55.3 kilometers and have 44.7 kilometers to go">
+              </div>    
+              <div class="column1">
+                <img class="demo cursor" src="images/12.jpg" style="width:100%" onclick="currentSlide(6)" alt="We are finally done">
+              </div>
+            </div>
+          </div>
+          <p class="Headline1">
+            Hiking is an activity I like very much. In addition to exercising my endurance and perseverance.<br>
+            The most important thing is that I can work hard with my friends to complete each journey. Although it is hard, we can all feel happy.<br>
+          </p>
+          
+          <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          </script>
+        
+      
+<footer>
+     
+    <div class="social">
+
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="fb icon">
+        </a>
+
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+
+        <a href="https://whatsapp.com" target="_blank">
+            <img src="images/whatsapp icon.png" alt="whatsapp icon">
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+
+        <a href="https://wechat.com" target="_blank">
+            <img src="images/wechat.png" alt="wechat icon">
+
+        <a href="https://workspace.google.com/" target="_blank">
+            <img src="images/gmail.png" alt="gmail icon">
+        </a>
+
+        <a href="https://youtube.com" target="_blank">
+          <img src="images/youtube.png" alt="youtube icon">
+        </a>
+
+        <p class="word">Web page production by <Strong>Thomas Fong</strong> @ 2023</p>
+    </div>
+</footer>
+</body>
+</html> 
