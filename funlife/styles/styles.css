@@ -164,8 +164,25 @@ body, html {
     margin-left: 5px;
   }
 
+  /* ------About Me page------ */
 
- 
+  img.sticky {
+    position: webkit-sticky;
+    top: 0;
+    width: 800px;
+  }
+
+  .box
+
+  h2,h3,h4{
+    font-size: 40px;
+    line-height:normal;
+  }
+
+  .box, p {
+    font-size: 25px;
+    line-height:normal;
+  }
   /* ------Hobbies page------ */
 
   body {
@@ -262,19 +279,28 @@ body, html {
   font-size: 50px;
   color: white;
   background-color:#219ebc;
-  margin-top:120px;
-  margin-bottom: 80px;
-  margin-right: 100px;
-  margin-left: 100px;
-  border-radius: 25px;
+  height: 120px;
+  width: 700px;
+  margin:120px 10px 100px 700px;
+  padding: 30px 20px 30px 20px;
+  border: #fb8500 solid;
+  border-radius: 15px;
 }
 
 .Headline1{
-  line-height:200%;
-  font-size: 30px;
-  color: white;
   background-color:#219ebc;
+  color: white;
+  font-size: 40px;
+  height: 250px;
+  width: 1900px;
+  line-height: 65px;
   margin: 150px 60px 100px 60px;
+  padding: 30px 30px 30px 30px;
+  border: #fb8500 solid;
   border-radius: 15px; 
 }
+
+
+
+
 
