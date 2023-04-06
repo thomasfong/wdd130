@@ -33,7 +33,7 @@
 
 <button class="tablink" onclick="openCity('Home', this, '#219ebc')" id="defaultOpen"><a href="Home.html">Home</a></button>
 <button class="tablink" onclick="openCity('About', this, '#4682B4')"><a href="about me.html">About me</a></button>
-<button class="tablink" onclick="openCity('Hobbies', this, '#fb8500')"><a href="horries.html">Hobbies</a></button>
+<button class="tablink" onclick="openCity('Hobbies', this, '#fb8500')"><a href="hobbies.html">Hobbies</a></button>
 <button class="tablink" onclick="openCity('Contact', this, '#ffb703')"><a href="contact.html">Contact</a></button>
 
 <script>
@@ -53,9 +53,11 @@
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+
     </script>
 
-    <div class="container">
+    <h3>Contact Form</h3>
+    <div class="container1">
       <form action="/action_page.php">
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -65,9 +67,11 @@
     
         <label for="country">Country</label>
         <select id="country" name="country">
+          <option value="hong kong">hong kong</option>
+          <option value="usa">USA</option>
           <option value="australia">Australia</option>
           <option value="canada">Canada</option>
-          <option value="usa">USA</option>
+          
         </select>
     
         <label for="subject">Subject</label>

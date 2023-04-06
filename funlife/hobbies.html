@@ -33,27 +33,27 @@
 
 <button class="tablink" onclick="openCity('Home', this, '#219ebc')" id="defaultOpen"><a href="Home.html">Home</a></button>
 <button class="tablink" onclick="openCity('About', this, '#4682B4')"><a href="about me.html">About me</a></button>
-<button class="tablink" onclick="openCity('Hobbies', this, '#fb8500')"><a href="horries.html">Hobbies</a></button>
+<button class="tablink" onclick="openCity('Hobbies', this, '#fb8500')"><a href="hobbies.html">Hobbies</a></button>
 <button class="tablink" onclick="openCity('Contact', this, '#ffb703')"><a href="contact.html">Contact</a></button>
 
 <script>
-    function openCity(cityName,elmnt,color) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-      }
-      document.getElementById(cityName).style.display = "block";
-      elmnt.style.backgroundColor = color;
-    
+  function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
     }
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-    </script>
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
 
 
         </head>
